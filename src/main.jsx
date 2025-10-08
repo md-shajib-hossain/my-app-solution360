@@ -4,6 +4,8 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import MainRoute from "./Pages/MainRoute.jsx";
 import Home from "./Pages/Home.jsx";
+import AllAppPage from "./Pages/AllAppPage.jsx";
+import Installation from "./Pages/Installation.jsx";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +15,14 @@ const router = createBrowserRouter([
       {
         index: true,
         Component: Home,
+      },
+      {
+        path: "/allapps",
+        Component: AllAppPage,
+      },
+      {
+        path: "/installation",
+        Component: Installation,
       },
     ],
   },

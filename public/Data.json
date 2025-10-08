@@ -1,0 +1,452 @@
+[
+  {
+    "image": "https://static.vecteezy.com/system/resources/previews/004/297/837/large_2x/camera-abstract-logo-template-minimal-design-logotype-concept-for-digital-art-studio-photo-studio-photographer-and-photo-editor-app-isolated-on-black-background-vector.jpg",
+    "title": "Photo Editor Pro",
+    "companyName": "SnapVibe Studio",
+    "id": 1,
+    "description": "A powerful photo editing app with advanced filters and tools.",
+    "size": 45,
+    "reviews": 1200,
+    "ratingAvg": 4.5,
+    "downloads": 50000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 500 }
+    ]
+  },
+  {
+    "image": "https://cdn.pixabay.com/photo/2020/08/03/09/51/pencil-5459686_1280.png",
+    "title": "Task Manager",
+    "companyName": "Productive Minds",
+    "id": 2,
+    "description": "Organize your tasks and boost productivity with this app.",
+    "size": 20,
+    "reviews": 800,
+    "ratingAvg": 4.2,
+    "downloads": 30000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 280 }
+    ]
+  },
+  {
+    "image": "https://static.vecteezy.com/system/resources/thumbnails/042/236/858/small_2x/fitness-logo-design-template-design-for-gym-and-fitness-fitness-logo-template-flat-design-free-vector.jpg",
+    "title": "Fitness Coach",
+    "companyName": "Healthify Inc.",
+    "id": 3,
+    "description": "Personalized workout plans and nutrition tracking.",
+    "size": 60,
+    "reviews": 2000,
+    "ratingAvg": 4.7,
+    "downloads": 100000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 920 }
+    ]
+  },
+  {
+    "image": "https://img.freepik.com/premium-photo/language-learning-app-logo_1029473-199054.jpg?w=2000",
+    "title": "Language Learner",
+    "companyName": "Polyglot Tech",
+    "id": 4,
+    "description": "Learn new languages with interactive lessons.",
+    "size": 35,
+    "reviews": 1500,
+    "ratingAvg": 4.3,
+    "downloads": 75000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 130 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 650 }
+    ]
+  },
+  {
+    "image": "https://tse4.mm.bing.net/th/id/OIP.e8zJmrHggc3E_42C1UltaAHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "title": "Budget Planner",
+    "companyName": "MoneyWise Solutions",
+    "id": 5,
+    "description": "Track expenses and plan your budget effectively.",
+    "size": 25,
+    "reviews": 900,
+    "ratingAvg": 4.1,
+    "downloads": 40000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 250 }
+    ]
+  },
+  {
+    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/e4a757106842361.5f99428d1aedd.jpg",
+    "title": "Music Streamer",
+    "companyName": "TuneFlow Inc.",
+    "id": 6,
+    "description": "Stream millions of songs with offline support.",
+    "size": 70,
+    "reviews": 2500,
+    "ratingAvg": 4.6,
+    "downloads": 150000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 1170 }
+    ]
+  },
+  {
+    "image": "https://static.vecteezy.com/system/resources/previews/037/930/412/original/notes-vecto-icon-vector.jpg",
+    "title": "Note Keeper",
+    "companyName": "MemoMaster",
+    "id": 7,
+    "description": "Capture ideas and organize notes seamlessly.",
+    "size": 15,
+    "reviews": 600,
+    "ratingAvg": 4.0,
+    "downloads": 20000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 180 },
+      { "name": "5 star", "count": 210 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/TECjsAu9DWLbKBuDl2sDHEUhlTh-n0eTgrHbt-7-a33Fy2p-slkHg8FN6r_dCbKBdA",
+    "title": "Travel Buddy",
+    "companyName": "Wanderlust Co.",
+    "id": 8,
+    "description": "Plan your trips and explore new destinations.",
+    "size": 50,
+    "reviews": 1300,
+    "ratingAvg": 4.4,
+    "downloads": 60000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 110 },
+      { "name": "3 star", "count": 220 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 510 }
+    ]
+  },
+  {
+    "image": "https://tse1.mm.bing.net/th/id/OIP.w-QRRMHR9dKhdBAPfHRt8gHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "title": "Recipe Book",
+    "companyName": "Foodie Labs",
+    "id": 9,
+    "description": "Discover and save delicious recipes.",
+    "size": 40,
+    "reviews": 1100,
+    "ratingAvg": 4.3,
+    "downloads": 45000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 400 }
+    ]
+  },
+  {
+    "image": "https://ixdzone.com/wp-content/uploads/2024/01/1704797965309.png",
+    "title": "Meditation Guide",
+    "companyName": "ZenVibe",
+    "id": 10,
+    "description": "Guided meditation for relaxation and mindfulness.",
+    "size": 30,
+    "reviews": 700,
+    "ratingAvg": 4.5,
+    "downloads": 35000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 290 }
+    ]
+  },
+  {
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/26/76/ed/2676ed69-967f-efd0-e982-90dee7b94039/AppIcon-1x_U007emarketing-0-10-0-85-220.png/1200x630wa.png",
+    "title": "Code Editor",
+    "companyName": "TechBit",
+    "id": 11,
+    "description": "Write and test code on the go.",
+    "size": 55,
+    "reviews": 950,
+    "ratingAvg": 4.2,
+    "downloads": 42000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 160 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 370 }
+    ]
+  },
+  {
+    "image": "https://as1.ftcdn.net/v2/jpg/03/53/40/56/1000_F_353405629_8huhGdc6Q9nWend4gVAARCYqTVsXXpEW.jpg",
+    "title": "E-Book Reader",
+    "companyName": "LitShelf",
+    "id": 12,
+    "description": "Read e-books with customizable settings.",
+    "size": 25,
+    "reviews": 850,
+    "ratingAvg": 4.1,
+    "downloads": 38000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 330 }
+    ]
+  },
+  {
+    "image": "https://tse1.mm.bing.net/th/id/OIP.71Ch7CNcUpV81k8giE22cwHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "title": "Weather App",
+    "companyName": "ClimateTrack",
+    "id": 13,
+    "description": "Real-time weather updates and forecasts.",
+    "size": 20,
+    "reviews": 1400,
+    "ratingAvg": 4.3,
+    "downloads": 65000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 240 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 580 }
+    ]
+  },
+  {
+    "image": "https://cdn5.vectorstock.com/i/1000x1000/58/04/chat-messaging-app-logo-design-vector-21795804.jpg",
+    "title": "Chat Messenger",
+    "companyName": "ConnectSphere",
+    "id": 14,
+    "description": "Secure messaging with voice and video calls.",
+    "size": 65,
+    "reviews": 2200,
+    "ratingAvg": 4.6,
+    "downloads": 120000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 350 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1010 }
+    ]
+  },
+  {
+    "image": "https://cdn.dribbble.com/users/1910933/screenshots/11008113/___copy___2.png",
+    "title": "Video Editor",
+    "companyName": "ClipCraft",
+    "id": 15,
+    "description": "Edit videos with professional tools.",
+    "size": 80,
+    "reviews": 1800,
+    "ratingAvg": 4.4,
+    "downloads": 90000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 130 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 800 }
+    ]
+  },
+  {
+    "image": "https://tse2.mm.bing.net/th/id/OIP.JOLbbonMs4cnPemmJwEEhwHaFj?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "title": "News Reader",
+    "companyName": "InfoPulse",
+    "id": 16,
+    "description": "Stay updated with global news.",
+    "size": 30,
+    "reviews": 1000,
+    "ratingAvg": 4.2,
+    "downloads": 50000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 350 }
+    ]
+  },
+  {
+    "image": "https://tse1.mm.bing.net/th/id/OIP.OPE6YcUaLJ0LvJVPmlPAuwHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "title": "Podcast Player",
+    "companyName": "AudioWave",
+    "id": 17,
+    "description": "Listen to your favorite podcasts anytime.",
+    "size": 40,
+    "reviews": 1200,
+    "ratingAvg": 4.5,
+    "downloads": 60000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 500 }
+    ]
+  },
+  {
+    "image": "https://th.bing.com/th/id/R.e3fddfbe537056f583d62fdbb617490d?rik=4Hh5HYQRV3jd6Q&pid=ImgRaw&r=0",
+    "title": "Sleep Tracker",
+    "companyName": "DreamSync",
+    "id": 18,
+    "description": "Monitor your sleep patterns and improve rest.",
+    "size": 25,
+    "reviews": 800,
+    "ratingAvg": 4.3,
+    "downloads": 35000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 280 }
+    ]
+  },
+  {
+    "image": "https://tse2.mm.bing.net/th/id/OIP.RabVm3Ac-v9_bjOXhVFSJwHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "title": "Event Planner",
+    "companyName": "OccasionHub",
+    "id": 19,
+    "description": "Organize events and manage schedules.",
+    "size": 35,
+    "reviews": 950,
+    "ratingAvg": 4.1,
+    "downloads": 40000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 300 }
+    ]
+  },
+  {
+    "image": "https://img.freepik.com/premium-vector/paint-brushes-color-palette_960117-8002.jpg",
+    "title": "Art Studio",
+    "companyName": "CreativeCanvas",
+    "id": 20,
+    "description": "Create digital art with powerful tools.",
+    "size": 60,
+    "reviews": 1100,
+    "ratingAvg": 4.4,
+    "downloads": 55000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 400 }
+    ]
+  },
+  {
+    "image": "https://tse1.mm.bing.net/th/id/OIP.NsSfgVRFRjrW9VCJwKWN1QHaH0?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "title": "Language Translator",
+    "companyName": "GlobeSpeak",
+    "id": 21,
+    "description": "Translate text in real-time across languages.",
+    "size": 30,
+    "reviews": 1300,
+    "ratingAvg": 4.3,
+    "downloads": 70000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 240 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 480 }
+    ]
+  },
+  {
+    "image": "https://static.vecteezy.com/system/resources/thumbnails/014/890/016/small_2x/shopping-cart-logo-design-shopping-logo-design-on-line-shopping-app-icon-free-vector.jpg",
+    "title": "Shopping List",
+    "companyName": "GroceryGuru",
+    "id": 22,
+    "description": "Create and manage your shopping lists.",
+    "size": 20,
+    "reviews": 700,
+    "ratingAvg": 4.0,
+    "downloads": 30000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 290 }
+    ]
+  },
+  {
+    "image": "https://tse3.mm.bing.net/th/id/OIP.duIgh6PUoaFwBge8P5yiIwHaHa?cb=12&w=826&h=826&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "title": "Workout Planner",
+    "companyName": "FitTrack",
+    "id": 23,
+    "description": "Plan and track your fitness routines.",
+    "size": 45,
+    "reviews": 1600,
+    "ratingAvg": 4.5,
+    "downloads": 80000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 240 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 780 }
+    ]
+  },
+  {
+    "image": "https://tse1.mm.bing.net/th/id/OIP.g-ZeDaFShNQbAhRwUbPfDQHaHa?cb=12&w=512&h=512&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "title": "Alarm Clock",
+    "companyName": "TimeTuner",
+    "id": 24,
+    "description": "Set alarms with customizable tones.",
+    "size": 15,
+    "reviews": 600,
+    "ratingAvg": 4.1,
+    "downloads": 25000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 180 },
+      { "name": "5 star", "count": 210 }
+    ]
+  },
+  {
+    "image": "https://tse1.mm.bing.net/th/id/OIP.w6FwdlFRF5hjaRf51lv1XwHaL3?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "title": "Mind Games",
+    "companyName": "BrainBoost",
+    "id": 25,
+    "description": "Challenge your brain with fun puzzles.",
+    "size": 50,
+    "reviews": 1400,
+    "ratingAvg": 4.4,
+    "downloads": 65000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 240 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 580 }
+    ]
+  }
+]

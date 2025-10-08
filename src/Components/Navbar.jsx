@@ -18,13 +18,13 @@ const Navbar = () => {
             </NavLink>
           </div>
           <div className="flex items-center gap-5">
-            <NavLink to="#">
+            <NavLink to="/">
               <p>Home</p>
             </NavLink>
-            <NavLink to="#">
+            <NavLink to="/allapps">
               <p>Apps</p>
             </NavLink>
-            <NavLink to="#">
+            <NavLink to="/installation">
               <p>Installation</p>
             </NavLink>
           </div>
