@@ -1,9 +1,22 @@
 import React from "react";
 import useProductsData from "../Hook/useProductsData";
-
+import { Audio } from "react-loader-spinner";
 const AllAppPage = () => {
   const { allData, loading, error } = useProductsData();
-  if (loading) return <div>Loading...</div>;
+  if (loading)
+    return (
+      <div className="flex justify-center items-center h-[300px]">
+        <Audio
+          height="80"
+          width="80"
+          radius="9"
+          color="green"
+          ariaLabel="three-dots-loading"
+          wrapperStyle
+          wrapperClass
+        />
+      </div>
+    );
   if (error) return <div>Error:Data Not Found</div>;
   return (
     <div>
@@ -16,6 +29,19 @@ const AllAppPage = () => {
           <p className="text-gray-500">
             Explore All Trending Apps on the Market developed by us
           </p>
+        </div>
+        {/* search section */}
+        <div className="flex items-center justify-between py-5 ">
+          <h1 className="text-2xl font-semibold px-2">
+            {" "}
+            <span> ({allData.length}) </span>App Found{" "}
+          </h1>
+          <input
+            className="py-1 w-[350px] bg-white rounded-lg rounded-r-none px-4"
+            type="search"
+            name="search"
+            placeholder="🔎 Search here"
+          />
         </div>
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {allData.map((singleData) => (

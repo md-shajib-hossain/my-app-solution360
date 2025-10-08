@@ -1,13 +1,28 @@
 import React from "react";
 import useProductsData from "../Hook/useProductsData";
+import { Audio } from "react-loader-spinner";
 const FeaturedApps = () => {
   const { allData, loading, error } = useProductsData();
-  if (loading) return <div>Loading...</div>;
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center h-[300px]">
+        <Audio
+          height="80"
+          width="80"
+          radius="9"
+          color="green"
+          ariaLabel="three-dots-loading"
+          wrapperStyle
+          wrapperClass
+        />
+      </div>
+    );
+  }
   if (error) return <div>Error:Data Not Found</div>;
   const featuredHomeData = allData.slice(0, 8);
 
   return (
-    <div className="max-w-[1200px] mx-auto border">
+    <div className="max-w-[1200px] mx-auto pb-10">
       <div className="text-center py-10">
         <h1 className="font-bold text-4xl mb-5 text-transparent bg-clip-text bg-linear-to-r from-[#632EE3] to-[#9F62F2]">
           {" "}

@@ -1,10 +1,13 @@
 import React from "react";
 import bannerimg from "../assets/hero.png";
+import googPlay from "../assets/googleplay.png";
+import appstore from "../assets/App_Store_(iOS).svg.png";
+import { NavLink } from "react-router";
 
 const Banner = () => {
   return (
     <>
-      <div className="flex flex-col  max-w-[700px] mx-auto space-y-10 pt-10 border">
+      <div className="flex flex-col  max-w-[700px] mx-auto space-y-10 pt-10">
         <div className="text-center ">
           <h1 className="text-4xl font-bold pb-5">
             We Build <br />{" "}
@@ -20,8 +23,18 @@ const Banner = () => {
           </p>
         </div>
         <div className="flex items-center gap-5 mx-auto">
-          <button className="btn btn-outline">Google Play </button>
-          <button className="btn btn-outline">App Store</button>
+          <NavLink to="https://play.google.com">
+            <button className="btn bg-white">
+              <img className="h-[25px]" src={googPlay} alt="" />
+              <p>Google Play</p>
+            </button>
+          </NavLink>
+          <NavLink to="https://www.apple.com/app-store/">
+            <button className="btn bg-white">
+              <img className="h-[25px]" src={appstore} alt="" />
+              <p>App Store</p>
+            </button>
+          </NavLink>
         </div>
         <div>
           <img src={bannerimg} alt="" />

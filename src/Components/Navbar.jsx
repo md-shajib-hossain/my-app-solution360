@@ -1,6 +1,10 @@
 import React from "react";
 import logoImage from "../assets/logo.png";
 import { NavLink } from "react-router";
+import { AiOutlineDownload } from "react-icons/ai";
+import { ImGithub } from "react-icons/im";
+import { ImHome } from "react-icons/im";
+import { AiFillAppstore } from "react-icons/ai";
 const Navbar = () => {
   return (
     <>
@@ -17,20 +21,48 @@ const Navbar = () => {
               <h1>HERO.IO</h1>
             </NavLink>
           </div>
-          <div className="flex items-center gap-5">
-            <NavLink to="/">
-              <p>Home</p>
+          <div className="flex items-center gap-5 ">
+            <NavLink to="/" className="hover:border-b-2 border-purple-700">
+              <div className="flex items-center gap-1">
+                <span>
+                  <ImHome />
+                </span>
+                <p>Home</p>
+              </div>
             </NavLink>
-            <NavLink to="/allapps">
-              <p>Apps</p>
+            <NavLink
+              to="/allapps"
+              className="hover:border-b-2 border-purple-700"
+            >
+              <div className="flex items-center gap-1">
+                <span>
+                  <AiFillAppstore />
+                </span>
+                <p>App</p>
+              </div>
             </NavLink>
-            <NavLink to="/installation">
-              <p>Installation</p>
+            <NavLink
+              to="/installation"
+              className="hover:border-b-2 border-purple-700"
+            >
+              <div className="flex items-center gap-1">
+                <AiOutlineDownload />
+                <p>Installation</p>
+              </div>
             </NavLink>
           </div>
-          <button className="py-2 hover:cursor-pointer px-3 rounded-lg text-white bg-linear-to-r from-[#632EE3] to-[#9F62F2]">
-            contribute
-          </button>
+
+          <NavLink to="https://github.com/md-shajib-hossain">
+            <button className="py-2 hover:cursor-pointer px-3 rounded-lg text-white bg-linear-to-r from-[#632EE3] to-[#9F62F2] skeleton w-fit">
+              <div className="flex items-center gap-1 ">
+                {" "}
+                <span>
+                  <ImGithub />
+                </span>
+                contribute
+              </div>
+            </button>
+          </NavLink>
         </div>
       </section>
     </>

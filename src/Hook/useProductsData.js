@@ -8,7 +8,7 @@ const useProductsData = () => {
 
   useEffect(() => {
     setLoading(true);
-    axios("/Data.json")
+    axios("../Data.json")
       .then((data) => {
         setAllData(data.data);
       })
