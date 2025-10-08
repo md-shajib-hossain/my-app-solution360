@@ -6,6 +6,7 @@ import MainRoute from "./Pages/MainRoute.jsx";
 import Home from "./Pages/Home.jsx";
 import AllAppPage from "./Pages/AllAppPage.jsx";
 import Installation from "./Pages/Installation.jsx";
+import AppDetails from "./Components/AppDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/installation",
         Component: Installation,
+      },
+      {
+        path: "/appdetails/:id",
+        Component: AppDetails,
       },
     ],
   },
