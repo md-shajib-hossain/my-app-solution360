@@ -1,7 +1,9 @@
 import React from "react";
 import useProductsData from "../Hook/useProductsData";
 import { Audio } from "react-loader-spinner";
-import { Link, Links } from "react-router";
+import { Link, Links, NavLink } from "react-router";
+import { AiOutlineDownload } from "react-icons/ai";
+import { AiFillStar } from "react-icons/ai";
 const FeaturedApps = () => {
   const { allData, loading, error } = useProductsData();
   allData.map((data) => {
@@ -53,10 +55,16 @@ const FeaturedApps = () => {
                     <h2 className="card-title">{singleData.title}</h2>
 
                     <div className="card-actions flex justify-between">
-                      <div className="badge badge-outline">
+                      <div className="bg-green-100 rounded-lg py-1 px-3 flex items-center text-lg font-semibold text-green-700">
+                        <strong>
+                          <AiOutlineDownload />
+                        </strong>
                         {singleData.downloads}
                       </div>
-                      <div className="badge badge-outline">
+                      <div className="bg-yellow-100 rounded-lg py-1 px-3 flex items-center text-lg font-semibold text-yellow-600">
+                        <strong className="">
+                          <AiFillStar />
+                        </strong>
                         {singleData.ratingAvg}
                       </div>
                     </div>
@@ -66,6 +74,11 @@ const FeaturedApps = () => {
             </Link>
           ))}
         </section>
+        <NavLink to="/allapps">
+          <button className="mb-5 btn max-w-[200px] mx-auto mt-5 grid content-center bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white w-fit">
+            Show All Apps
+          </button>
+        </NavLink>
       </div>
     </>
   );

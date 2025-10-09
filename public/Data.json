@@ -197,24 +197,7 @@
       { "name": "5 star", "count": 370 }
     ]
   },
-  {
-    "image": "https://as1.ftcdn.net/v2/jpg/03/53/40/56/1000_F_353405629_8huhGdc6Q9nWend4gVAARCYqTVsXXpEW.jpg",
-    "title": "E-Book Reader",
-    "companyName": "LitShelf",
-    "id": 12,
-    "description": "Read e-books with customizable settings.",
-    "size": 25,
-    "reviews": 850,
-    "ratingAvg": 4.1,
-    "downloads": 38000,
-    "ratings": [
-      { "name": "1 star", "count": 40 },
-      { "name": "2 star", "count": 80 },
-      { "name": "3 star", "count": 150 },
-      { "name": "4 star", "count": 250 },
-      { "name": "5 star", "count": 330 }
-    ]
-  },
+
   {
     "image": "https://tse1.mm.bing.net/th/id/OIP.71Ch7CNcUpV81k8giE22cwHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
     "title": "Weather App",

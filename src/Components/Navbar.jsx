@@ -22,7 +22,16 @@ const Navbar = () => {
             </NavLink>
           </div>
           <div className="flex items-center gap-5 ">
-            <NavLink to="/" className="hover:border-b-2 border-purple-700">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                `hover:border-b-2 border-purple-700 ${
+                  isActive
+                    ? "text-purple-700 border-b-2 border-purple-700 font-semibold"
+                    : "text-black"
+                }`
+              }
+            >
               <div className="flex items-center gap-1">
                 <span>
                   <ImHome />
@@ -32,7 +41,13 @@ const Navbar = () => {
             </NavLink>
             <NavLink
               to="/allapps"
-              className="hover:border-b-2 border-purple-700"
+              className={({ isActive }) =>
+                `hover:border-b-2 border-purple-700 ${
+                  isActive
+                    ? "text-purple-700 border-b-2 border-purple-700 font-semibold"
+                    : "text-black"
+                }`
+              }
             >
               <div className="flex items-center gap-1">
                 <span>
@@ -43,7 +58,13 @@ const Navbar = () => {
             </NavLink>
             <NavLink
               to="/installation"
-              className="hover:border-b-2 border-purple-700"
+              className={({ isActive }) =>
+                `hover:border-b-2 border-purple-700 ${
+                  isActive
+                    ? "text-purple-700 border-b-2 border-purple-700 font-semibold"
+                    : "text-black"
+                }`
+              }
             >
               <div className="flex items-center gap-1">
                 <AiOutlineDownload />

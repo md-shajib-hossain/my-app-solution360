@@ -27,7 +27,7 @@ const Installation = () => {
               // value={sortOrder}
               // onChange={(e) => setSortOrder(e.target.value)}
             >
-              <option value="none">Sort by size</option>
+              <option value="none">Sort by downloads</option>
               <option value="price-asc">min to max</option>
               <option value="price-desc">max to min</option>
             </select>

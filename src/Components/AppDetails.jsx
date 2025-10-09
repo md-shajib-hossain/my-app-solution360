@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router";
 import useProductsData from "../Hook/useProductsData";
 import { Audio } from "react-loader-spinner";
@@ -27,20 +27,20 @@ const AppDetails = () => {
     );
   }
   if (error) return <div>Error:Data Not Found</div>;
-  const app = allData.find((item) => item.id == id); // == ব্যবহার করো, কারণ id string হতে পারে
+  const app = allData.find((item) => item.id == id);
 
   if (!app) return <div>App not found</div>;
 
   return (
-    <div className="flex  gap-2 max-w-[1200px] mx-auto  py-5">
+    <div className="flex  gap-2 max-w-[1200px] mx-auto w-full py-5">
       <div className="">
         <img
-          className="max-w-[250px] border object-cover rounded-lg mb-2"
+          className="h-[250px] w-[250px] object-cover rounded-lg mb-2"
           src={app.image}
           alt={app.title}
         />
       </div>
-      <section className="gap-5 border space-y-5 ">
+      <section className="gap-5 space-y-2 w-full ">
         <h1 className="text-3xl font-bold mb-2">{app.title}</h1>
         <h3 className="text-gray-600 mb-4 border-b-2 border-gray-500">
           <h3>
@@ -51,7 +51,7 @@ const AppDetails = () => {
           </h3>
         </h3>
 
-        <div className="flex justify-between items-center gap-10 ">
+        <div className="flex mt-10 items-center gap-10 ">
           <div>
             <img className="h-[30px]" src={downloadicon} alt="" />
             <h2>Downloads</h2>
