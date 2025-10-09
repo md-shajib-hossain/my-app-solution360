@@ -4,11 +4,10 @@ import { Audio } from "react-loader-spinner";
 import { Link, Links, NavLink } from "react-router";
 import { AiOutlineDownload } from "react-icons/ai";
 import { AiFillStar } from "react-icons/ai";
+import errordata from "../assets/error-404.png";
 const FeaturedApps = () => {
   const { allData, loading, error } = useProductsData();
-  allData.map((data) => {
-    console.log(data.id);
-  });
+
   if (loading) {
     return (
       <div className="flex justify-center items-center h-[300px]">
@@ -24,7 +23,13 @@ const FeaturedApps = () => {
       </div>
     );
   }
-  if (error) return <div>Error:Data Not Found</div>;
+  if (error)
+    return (
+      <div className="w-[300px] mx-auto">
+        {" "}
+        <img src={errordata} alt="error 404 .png" />
+      </div>
+    );
   const featuredHomeData = allData.slice(0, 8);
 
   return (

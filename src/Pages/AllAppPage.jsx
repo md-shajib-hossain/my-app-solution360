@@ -11,7 +11,6 @@ const AllAppPage = () => {
 
   const [search, setSearch] = useState("");
   const modifiedSearch = search.trim().toLocaleLowerCase();
-  console.log(search);
   const searchApps = modifiedSearch
     ? allData.filter((app) =>
         app.title.toLocaleLowerCase().includes(modifiedSearch)
