@@ -1,13 +1,15 @@
 import React from "react";
 import { AiOutlineDownload } from "react-icons/ai";
 import apperror from "../assets/App-Error.png";
+import { toast, ToastContainer } from "react-toastify";
 const InstalledApps = ({ installedList, setInstalledList }) => {
   // console.log(installedList); array pacchi.
 
   const handleUnInstalled = (id) => {
     const updatedList = installedList.filter((item) => item.id !== id);
     setInstalledList(updatedList);
-    localStorage.setItem("restinstalledItem", updatedList);
+    localStorage.setItem("installitem", JSON.stringify(updatedList));
+    toast("Uninstalled Successful");
   };
   if (!installedList || installedList.length === 0) {
     return (
@@ -21,7 +23,10 @@ const InstalledApps = ({ installedList, setInstalledList }) => {
   return (
     <>
       {installedList.map((item) => (
-        <div className="max-w-[1200px] mx-auto py-2 px-2 border mb-2 rounded-lg flex items-center justify-between bg-white ">
+        <div
+          key={item.id}
+          className="max-w-[1200px] mx-auto py-2 px-2 mb-2 rounded-lg flex items-center justify-between bg-white border border-purple-400 shadow-[0_0_20px_2px_rgba(34,197,94,0.6)]"
+        >
           <div className="Left flex gap-4">
             <div>
               <img className="w-[150px] h-[120px]" src={item.image} alt="" />
@@ -69,6 +74,7 @@ const InstalledApps = ({ installedList, setInstalledList }) => {
           </div>
         </div>
       ))}
+      <ToastContainer></ToastContainer>
     </>
   );
 };

@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <>
       <section className=" py-4">
-        <div className="max-w-[1200px] mx-auto flex justify-between ">
+        <div className="max-w-[1200px] mx-auto flex flex-col items-center md:justify-between md:flex-row ">
           <div className="flex">
             <NavLink to="/" className="flex items-center">
               <img
@@ -18,10 +18,10 @@ const Navbar = () => {
                 src={logoImage}
                 alt="logo.png"
               />
-              <h1>HERO.IO</h1>
+              <h1 className="text-xl font-bold text-purple-700">HERO.IO</h1>
             </NavLink>
           </div>
-          <div className="flex items-center gap-5 ">
+          <div className="flex flex-col md:flex-row items-center gap-5 text-lg">
             <NavLink
               to="/"
               className={({ isActive }) =>
@@ -74,7 +74,7 @@ const Navbar = () => {
           </div>
 
           <NavLink to="https://github.com/md-shajib-hossain">
-            <button className="py-2 hover:cursor-pointer px-3 rounded-lg text-white bg-linear-to-r from-[#632EE3] to-[#9F62F2] skeleton w-fit">
+            <button className="py-2 hover:cursor-pointer px-3 rounded-lg text-white bg-linear-to-r from-[#632EE3] to-[#9F62F2]">
               <div className="flex items-center gap-1 ">
                 {" "}
                 <span>

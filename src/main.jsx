@@ -7,11 +7,13 @@ import Home from "./Pages/Home.jsx";
 import AllAppPage from "./Pages/AllAppPage.jsx";
 import Installation from "./Pages/Installation.jsx";
 import AppDetails from "./Components/AppDetails.jsx";
+import ErrorPage from "./Pages/ErrorPage.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainRoute></MainRoute>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         index: true,

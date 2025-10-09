@@ -9,14 +9,14 @@ const Banner = () => {
     <>
       <div className="flex flex-col  max-w-[700px] mx-auto space-y-10 pt-10">
         <div className="text-center ">
-          <h1 className="text-4xl font-bold pb-5">
+          <h1 className="md:text-4xl font-bold pb-5">
             We Build <br />{" "}
             <span className="text-transparent bg-clip-text bg-linear-to-r from-[#632EE3] to-[#9F62F2]">
               Productive
             </span>{" "}
             Apps
           </h1>
-          <p className=" text-md text-gray-500">
+          <p className=" md:text-md text-gray-500">
             At HERO.IO, we craft innovative apps designed to make everyday life
             simpler, smarter, and more exciting.Our goal is to turn your ideas
             into digital experiences that truly make an impact.
@@ -36,7 +36,7 @@ const Banner = () => {
             </button>
           </NavLink>
         </div>
-        <div>
+        <div className="w-[95%] md:w-full">
           <img src={bannerimg} alt="" />
         </div>
       </div>

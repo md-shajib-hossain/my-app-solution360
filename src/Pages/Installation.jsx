@@ -5,7 +5,6 @@ const Installation = () => {
   const [installedlist, setInstalledList] = useState([]);
   const [sortOrder, setSortOrder] = useState("none");
 
-  // localStorage থেকে ডাটা লোড
   useEffect(() => {
     const savedList = JSON.parse(localStorage.getItem("installitem")) || [];
     setInstalledList(savedList);
@@ -49,7 +48,7 @@ const Installation = () => {
               value={sortOrder}
               onChange={(e) => setSortOrder(e.target.value)}
             >
-              <option value="none">Sort by size</option>
+              <option value="none">Sort by Downloads</option>
               <option value="size-asc">Low to High</option>
               <option value="size-desc">High to Low</option>
             </select>
