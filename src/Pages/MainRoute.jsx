@@ -1,17 +1,17 @@
 import React from "react";
-import Navbar from "../Components/Navbar";
 import { Outlet } from "react-router";
 import Footer from "../Components/Footer";
 import Home from "./Home";
 import AllAppPage from "./AllAppPage";
 import Installation from "./Installation";
 import { ToastContainer } from "react-toastify";
+import Nav2 from "../Components/Nav2";
 
 const MainRoute = () => {
   return (
     <>
       <div>
-        <Navbar></Navbar>
+        <Nav2></Nav2>
 
         <div className="bg-base-200">
           <Outlet>

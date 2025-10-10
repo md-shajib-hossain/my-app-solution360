@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import useProductsData from "../Hook/useProductsData";
-import { Audio } from "react-loader-spinner";
 import ClipLoader from "react-spinners/ClipLoader";
 import { Link } from "react-router";
 import apperror from "../assets/App-Error.png";
