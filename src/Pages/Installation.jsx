@@ -27,7 +27,7 @@ const Installation = () => {
     <>
       <div>
         <div className="text-center py-10">
-          <h1 className="font-bold text-4xl mb-5 text-transparent bg-clip-text bg-linear-to-r from-[#632EE3] to-[#9F62F2]">
+          <h1 className="font-bold md:text-4xl mb-5 text-transparent bg-clip-text bg-linear-to-r from-[#632EE3] to-[#9F62F2]">
             Your Installed Apps
           </h1>
           <p className="text-gray-500">
@@ -36,8 +36,8 @@ const Installation = () => {
         </div>
 
         {/* sort section */}
-        <div className="flex items-center justify-between py-5 max-w-[1200px] mx-auto">
-          <h1 className="text-2xl font-semibold px-2">
+        <div className="flex flex-col md:flex-row items-center justify-between py-5 max-w-[1200px] mx-auto">
+          <h1 className="md:text-2xl font-semibold px-2 py-2">
             <span>({finalList.length})</span> Installed App
           </h1>
 

@@ -36,7 +36,7 @@ const FeaturedApps = () => {
     <>
       <div className="max-w-[1200px] mx-auto pb-10">
         <div className="text-center py-10">
-          <h1 className="font-bold text-4xl mb-5 text-transparent bg-clip-text bg-linear-to-r from-[#632EE3] to-[#9F62F2]">
+          <h1 className="font-bold md:text-4xl mb-5 text-transparent bg-clip-text bg-linear-to-r from-[#632EE3] to-[#9F62F2]">
             {" "}
             Trending Apps
           </h1>
@@ -44,7 +44,7 @@ const FeaturedApps = () => {
             Explore All Trending Apps on the Market developed by us
           </p>
         </div>
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <section className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-[95%] md:max-w-full">
           {featuredHomeData.map((singleData) => (
             <Link key={singleData.id} to={`/appdetails/${singleData.id}`}>
               <div className="">

@@ -18,7 +18,9 @@ const Navbar = () => {
                 src={logoImage}
                 alt="logo.png"
               />
-              <h1 className="text-xl font-bold text-purple-700">HERO.IO</h1>
+              <h1 className="text-xl font-bold text-purple-700">
+                My App Solution 360
+              </h1>
             </NavLink>
           </div>
           <div className="flex flex-col md:flex-row items-center gap-5 text-lg">

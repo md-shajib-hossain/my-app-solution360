@@ -8,6 +8,8 @@ import AllAppPage from "./Pages/AllAppPage.jsx";
 import Installation from "./Pages/Installation.jsx";
 import AppDetails from "./Components/AppDetails.jsx";
 import ErrorPage from "./Pages/ErrorPage.jsx";
+import AppNotFound from "./AppNotFound.jsx";
+// import "react-toastify/dist/ReactToastify.css";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,15 @@ const router = createBrowserRouter([
         path: "/allapps",
         Component: AllAppPage,
       },
+
+      // {
+      //   path: "/allapps",
+      //   children: [
+      //     { index: true, Component: AllAppPage }, // /allapps chatgpt setup
+      //     { path: ":id", Component: AppDetails }, // /allapps/1, /allapps/2
+      //     { path: "*", Component: AppNotFound }, // /allapps/anything-else
+      //   ],
+      // },
       {
         path: "/installation",
         Component: Installation,
@@ -31,6 +42,10 @@ const router = createBrowserRouter([
         path: "/appdetails/:id",
         Component: AppDetails,
       },
+      // {
+      //   path: "/allapps/*",
+      //   Component: AppNotFound,
+      // },
     ],
   },
 ]);

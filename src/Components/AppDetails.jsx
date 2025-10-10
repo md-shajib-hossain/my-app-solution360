@@ -8,16 +8,7 @@ import reviewicon from "../assets/icon-review.png";
 import errordata from "../assets/error-404.png";
 import { ToastContainer, toast } from "react-toastify";
 import MyChartBox from "./MyChartBox";
-
-// import {
-//   BarChart,
-//   Bar,
-//   XAxis,
-//   YAxis,
-//   Tooltip,
-//   ResponsiveContainer,
-//   CartesianGrid,
-// } from "recharts";
+import AppNotFound from "../AppNotFound";
 
 const AppDetails = () => {
   const [isInstalled, setIsInstalled] = useState(false);
@@ -49,7 +40,9 @@ const AppDetails = () => {
     );
   const app = allData.find((item) => item.id == id);
 
-  if (!app) return <div>App not found</div>;
+  if (!app) {
+    return <AppNotFound></AppNotFound>;
+  }
 
   const handleInstallBtn = () => {
     setIsInstalled(true);
@@ -67,14 +60,14 @@ const AppDetails = () => {
     }
 
     localStorage.setItem("installitem", JSON.stringify(updatedList));
-    toast("App Installed Successfully");
+    toast.success("App Installed Successfully");
   };
   return (
     <>
-      <div className="flex  gap-5 max-w-[1200px] mx-auto w-full py-5">
-        <div className="">
+      <div className="flex flex-col md:flex-row gap-5 md:max-w-[1200px] mx-auto w-full py-5 ">
+        <div className="mx-auto  ">
           <img
-            className="h-[250px] w-[250px] object-cover rounded-lg mb-2"
+            className="w-[95%] md:h-[250px] md:w-[250px] object-cover rounded-lg mb-2"
             src={app.image}
             alt={app.title}
           />
@@ -90,38 +83,36 @@ const AppDetails = () => {
             </h2>
           </div>
 
-          <div className="flex mt-10 items-center gap-10 ">
+          <div className="flex md:flex-row mt-10 items-center gap-10 ">
             <div>
               <img className="h-[30px]" src={downloadicon} alt="" />
               <h2>Downloads</h2>
-              <h1 className="text-3xl font-bold">{app.downloads}</h1>
+              <h1 className="md:text-3xl font-bold">{app.downloads}</h1>
             </div>
             <div>
               {" "}
               <img className="h-[30px]" src={ratingicon} alt="" />
               <h2>Average Ratings</h2>
-              <h1 className="text-3xl font-bold">{app.ratingAvg}</h1>
+              <h1 className="md:text-3xl font-bold">{app.ratingAvg}</h1>
             </div>
             <div>
               {" "}
               <img className="h-[30px]" src={reviewicon} alt="" />
               <h2>Total Reviews</h2>
-              <h1 className="text-3xl font-bold"> {app.reviews} </h1>
+              <h1 className="md:text-3xl font-bold"> {app.reviews} </h1>
             </div>
           </div>
           <button
             disabled={isInstalled}
             onClick={handleInstallBtn}
-            className="btn bg-green-500 text-lg text-white"
+            className="btn bg-green-500 text-lg text-white text-center"
           >
-            Install now <span>(15mb)</span>
+            Install now <span>({app.size} mb)</span>
           </button>
         </section>
         {/* Chart */}
-
-        <ToastContainer />
       </div>
-      <section className="max-w-[1200px] mx-auto pb-10">
+      <section className="md:max-w-[1200px] mx-auto pb-10">
         <MyChartBox app={app}></MyChartBox>
       </section>
     </>

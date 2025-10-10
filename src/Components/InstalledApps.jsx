@@ -1,7 +1,7 @@
 import React from "react";
 import { AiOutlineDownload } from "react-icons/ai";
-import apperror from "../assets/App-Error.png";
 import { toast, ToastContainer } from "react-toastify";
+import AppError from "./AppError";
 const InstalledApps = ({ installedList, setInstalledList }) => {
   // console.log(installedList); array pacchi.
 
@@ -9,14 +9,13 @@ const InstalledApps = ({ installedList, setInstalledList }) => {
     const updatedList = installedList.filter((item) => item.id !== id);
     setInstalledList(updatedList);
     localStorage.setItem("installitem", JSON.stringify(updatedList));
-    toast("Uninstalled Successful");
+    toast.success("Uninstalled Successful");
   };
   if (!installedList || installedList.length === 0) {
     return (
-      <div className="w-[300px] mx-auto flex flex-col text-center gap-3">
-        <img src={apperror} alt="app error.jpg" />
-        <p className="text-xl font-bold">Oops! App Not Found</p>
-      </div>
+      <>
+        <AppError></AppError>
+      </>
     );
   }
 
@@ -25,11 +24,15 @@ const InstalledApps = ({ installedList, setInstalledList }) => {
       {installedList.map((item) => (
         <div
           key={item.id}
-          className="max-w-[1200px] mx-auto py-2 px-2 mb-2 rounded-lg flex items-center justify-between bg-white border border-purple-400 shadow-[0_0_20px_2px_rgba(34,197,94,0.6)]"
+          className="max-w-[1200px] mx-auto py-2 px-2 mb-2 rounded-lg flex flex-col md:flex-row items-center md:justify-between bg-white border border-purple-400 shadow-[0_0_20px_2px_rgba(34,197,94,0.6)]"
         >
-          <div className="Left flex gap-4">
+          <div className="Left flex flex-col md:flex-row  gap-4">
             <div>
-              <img className="w-[150px] h-[120px]" src={item.image} alt="" />
+              <img
+                className=" w-[95%] rounded-md md:w-[150px] md:h-[120px]"
+                src={item.image}
+                alt=""
+              />
             </div>
             <div>
               <div>
@@ -74,7 +77,6 @@ const InstalledApps = ({ installedList, setInstalledList }) => {
           </div>
         </div>
       ))}
-      <ToastContainer></ToastContainer>
     </>
   );
 };
