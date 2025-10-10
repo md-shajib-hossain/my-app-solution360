@@ -11,7 +11,7 @@ const AllAppPage = () => {
   const { allData, loading, error } = useProductsData();
 
   const [search, setSearch] = useState("");
-  const [searchLoading, setSearchLoading] = useState(false); // 👈 spinner state
+  const [searchLoading, setSearchLoading] = useState(false);
   const [searchApps, setSearchApps] = useState([]);
 
   // 🔹 when search input changes
@@ -27,7 +27,7 @@ const AllAppPage = () => {
         : allData;
       setSearchApps(filtered);
       setSearchLoading(false);
-    }, 200); // ⏳ small delay to mimic "live searching"
+    }, 200);
 
     return () => clearTimeout(timer);
   }, [search, allData]);

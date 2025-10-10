@@ -1,17 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Navbar from "../Components/Navbar";
 import { Outlet } from "react-router";
 import Footer from "../Components/Footer";
 import Home from "./Home";
 import AllAppPage from "./AllAppPage";
 import Installation from "./Installation";
-import { toast, ToastContainer } from "react-toastify";
-import AppNotFound from "../AppNotFound";
+import { ToastContainer } from "react-toastify";
 
 const MainRoute = () => {
-  // useEffect(() => {
-  //   toast("Toast working from MainRoute!");
-  // }, []);
   return (
     <>
       <div>
