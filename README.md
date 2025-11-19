@@ -30,20 +30,22 @@ Users can explore apps, view detailed information, install or uninstall them, an
 - **Vite** – Lightning-fast development environment
 - **Netlify** – Deployment and hosting
 
-## Dependencies--
+## Dependencies
+
+```json
+{
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.14",
-    "axios": "^1.12.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-icons": "^5.5.0",
-    "react-loader-spinner": "^7.0.3",
     "react-router": "^7.9.3",
-    "react-spinners": "^0.17.0",
+    "tailwindcss": "^4.1.14",
     "react-toastify": "^11.0.5",
+    "react-icons": "^5.5.0",
+    "axios": "^1.12.2",
     "recharts": "^3.2.1",
-    "tailwindcss": "^4.1.14"
-  },
+    "react-loader-spinner": "^7.0.3"
+  }
+}
 
 ## Installation & Run Locally
 
