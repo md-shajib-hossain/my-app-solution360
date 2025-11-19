@@ -4,7 +4,7 @@
 Users can explore apps, view detailed information, install or uninstall them, and experience real-time feedback with a smooth user interface.
 
 ---
-
+[**Live Demo →**](https://my-app-solution360.netlify.app/)
 ---
 
 ## 🧩 Features
@@ -29,5 +29,37 @@ Users can explore apps, view detailed information, install or uninstall them, an
 - **Local Storage API** – For saving installed app data
 - **Vite** – Lightning-fast development environment
 - **Netlify** – Deployment and hosting
+
+## Dependencies--
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.14",
+    "axios": "^1.12.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-icons": "^5.5.0",
+    "react-loader-spinner": "^7.0.3",
+    "react-router": "^7.9.3",
+    "react-spinners": "^0.17.0",
+    "react-toastify": "^11.0.5",
+    "recharts": "^3.2.1",
+    "tailwindcss": "^4.1.14"
+  },
+
+## Installation & Run Locally
+
+```bash
+# Clone the repository
+git clone https://github.com/md-shajib-hossain/my-app-solution-360.git
+
+# Enter project directory
+cd my-app-solution-360
+
+# Install dependencies
+npm install
+# or
+yarn
+
+# Start development server
+npm run dev
 
 ---
